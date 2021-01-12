@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.zerock.mapper.TimeMapper">
+	<!-- 이 쿼리를 날리는 namespace에 작성된 package의  method가 getTime2-->
+	<select id="getTime2" resultType="string">
+		SELECT sysdate FROM dual
+	</select>
+</mapper>
